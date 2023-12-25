@@ -1,0 +1,122 @@
+/*
+---pseudo => classes
+---pseudo Elements=> first letter- first line
+---pseudo Elements=> before-after=content
+---Bordr Radius=> 
+---box shadows -and examples =>
+---the box model = and box sizing = > ?
+!Important declaration=and use cases
+---vendor prefixes=> ?
+---variabiles =>root
+---
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+:root {
+    --mansopadding: 10Px;
+    --makecolor: #17181833;
+
+}
+
+
+p { 
+  
+    width: 300px;
+    text-align: center;
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px auto;
+    font-weight: bold;
+    border: 2px;
+    color: cornflowerblue;
+    font-family: cursive;
+    box-shadow: inset 0px 1px 32px 1px var(--makecolor);
+    border-radius: 2px;
+
+}
+
+
+.make {
+        width: 600px;
+        text-align: center;
+        background-color: #eee;
+        padding: var(--mansopadding);
+        border: 2px;
+        font-size: x-large;
+        border-radius: 2px;
+   
+}
+
+.man {
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    counter-increment: mambers-counter;
+}
+.one {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+.one::after {
+    content: counter(mambers-counter);
+    background-color: var(--makecolor);
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    color: white;
+    text-align: center;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+.one::before {
+    content: "";
+    /* background-color: blueviolet; */
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    /* padding: 10px; */
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #ff000000 #00800000 var(--makecolor);
+}
+.mann { 
+    background-color: var(--makecolor);
+    width: 50px;
+    margin-right: 50px;
+    height: 73px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
